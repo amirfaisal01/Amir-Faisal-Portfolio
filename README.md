@@ -117,6 +117,22 @@ No external build tools, compiler managers, or package managers (`npm` / `yarn`)
 
 1. **Clone or Extract the Source Node:**
    Open your preferred terminal window and execute the following sequence:
-```bash
-git clone [https://github.com/your-username/portfolio-repository.git](https://github.com/your-username/portfolio-repository.git)
-cd portfolio-repository
+   <pre><code>git clone [https://github.com/your-username/portfolio-repository.git](https://github.com/your-username/portfolio-repository.git)
+cd portfolio-repository</code></pre>
+   *(Alternatively, extract the provided `Amir Faisal Portfolio.rar` file directly to your workspace).*
+
+2. **Serve the Application Stack:**
+   You can run and test the compiled assets via two main execution flows:
+   
+   * **Method A (Direct Local Rendering):** Navigate into the project folder root and double-click `index.html` to execute the file directly inside your default web browser engine.
+   * **Method B (Local Server Mounting - Highly Recommended):** To ensure correct session tracking, local storage routing, and asset linking compliance, boot a local server environment using Python or VS Code Live Server:
+     <pre><code># Invokes a local web server mounting instance on port 8080
+       python -m http.server 8080</code></pre> Once the terminal activates the listener node, launch your browser and navigate to: `http://localhost:8080`
+
+## 🌐 8. Production & Verification Nodes
+
+- **Live Production URL:** [Launch Car Maintenance Record Engine Node ↗](https://077348.unisza.work/CarMaintenanceRecord/)
+  A high-integrity web application engineered to track vehicle diagnostic logs, optimize garage maintenance pipelines, and guarantee record immutability using server-side SHA-256 cryptographic hashing algorithms across multi-tier user dashboards.
+
+- **Featured Live Project Node (TruHotel Architecture):** [Launch TruHotel Engine Node ↗](https://077348.unisza.work/truhotel/)
+  A production-hosted engine executing complex transactional rules, state constraint layers, dynamic resource cost computation, and clean server-side CRUD manipulation routines to eliminate race conditions during concurrent booking sessions.
