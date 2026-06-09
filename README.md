@@ -89,13 +89,11 @@ The application repository consists of four highly focused, responsive functiona
 
 ### 1. Main Dashboard Hub (`index.html`)
 *The frontend interface showcasing high-impact project badges, tech stack pills, and dynamic project card layouts.*
-![Dashboard Desktop Preview](https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80)
-*(Note: For your final assignment package, replace this placeholder link with your actual screenshot path, e.g., `screenshots/dashboard-dark.png`)*
+![Dashboard Desktop Preview](images/index.png)
 
 ### 2. Technical Profile Matrix (`about.html`)
 *A detailed view showcasing academic qualification paths, chronological timelines, and structural competency boxes.*
-![Profile Matrix Desktop Preview](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80)
-*(Note: For your final assignment package, replace this placeholder link with your actual screenshot path, e.g., `screenshots/about-light.png`)*
+![Profile Matrix Desktop Preview](images/about.png)
 
 ---
 
