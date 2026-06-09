@@ -119,8 +119,7 @@ cd portfolio-repository</code></pre>
    * **Method A (Direct Local Rendering):** Navigate into the project folder root and double-click `index.html` to execute the file directly inside your default web browser engine.
    * **Method B (Local Server Mounting - Highly Recommended):** To ensure correct session tracking, local storage routing, and asset linking compliance, boot a local server environment using Python or VS Code Live Server:
      <pre><code># Invokes a local web server mounting instance on port 8080
-python -m http.server 8080</code></pre>
-     Once the terminal activates the listener node, launch your browser and navigate to: `http://localhost:8080`
+       python -m http.server 8080</code></pre> Once the terminal activates the listener node, launch your browser and navigate to: `http://localhost:8080`
 
 ## 🌐 8. Production & Verification Nodes
 
