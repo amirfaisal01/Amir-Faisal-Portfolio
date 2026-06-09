@@ -127,4 +127,7 @@ Once the terminal activates the listener node, launch your browser and navigate 
 ## 🌐 8. Production & Verification Nodes
 
 - **Live Production URL:** [Launch Active Portfolio Node](https://077348.unisza.work/CarMaintenanceRecord/)
-- **Featured Live Project Node (TruHotel Architecture):** A production-hosted engine executing complex transactional rules, state constraint layers, and server-side CRUD processes: [Launch TruHotel Engine Node ↗](https://077348.unisza.work/truhotel/)
+  A high-integrity web application engineered to track vehicle diagnostic logs, optimize garage maintenance pipelines, and guarantee record immutability using server-side SHA-256 cryptographic hashing algorithms across multi-tier user dashboards.
+
+- **Featured Live Project Node (TruHotel Architecture):** [Launch TruHotel Engine Node ↗](https://077348.unisza.work/truhotel/)
+  A production-hosted engine executing complex transactional rules, state constraint layers, dynamic resource cost computation, and clean server-side CRUD manipulation routines to eliminate race conditions during concurrent booking sessions.
