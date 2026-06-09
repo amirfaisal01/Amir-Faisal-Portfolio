@@ -102,28 +102,25 @@ The application repository consists of four highly focused, responsive functiona
 
 Follow these sequential steps to mount and verify the portfolio code environment locally on your development workstation:
 
-### Prerequisites
-No external build tools, compiler managers, or package managers (`npm`/`yarn`) are required. The system runs natively on any modern browser engine (V8, Gecko, or WebKit).
+### 📋 Prerequisites
+No external build tools, compiler managers, or package managers (`npm` / `yarn`) are required. The system runs natively on any modern browser engine (V8, Gecko, or WebKit).
 
-### Initialization Setup
+### ⚙️ Initialization Setup
+
 1. **Clone or Extract the Source Node:**
-   Open your preferred terminal window and execute the following clone sequence:
-   ```bash
-   git clone [https://github.com/your-username/portfolio-repository.git](https://github.com/your-username/portfolio-repository.git)
-   cd portfolio-repository
-(Alternatively, extract the provided Amir Faisal Portfolio.rar file directly to your desktop space).
+   Open your preferred terminal window and execute the following sequence:
+   <pre><code>git clone [https://github.com/your-username/portfolio-repository.git](https://github.com/your-username/portfolio-repository.git)
+cd portfolio-repository</code></pre>
+   *(Alternatively, extract the provided `Amir Faisal Portfolio.rar` file directly to your workspace).*
 
-Serve the Application Stack:
-You can run and test the compiled assets via two main execution flows:
-
-Method A (Direct Local Rendering): Navigate into the project folder root and double-click index.html to execute the file directly inside your default web browser engine.
-
-Method B (Local Server Mounting - Highly Recommended): To ensure correct session, local storage routing, and asset linking compliance, boot a local server environment using Python or VS Code Live Server:
-
-Bash
-# Invokes a local web server mounting instance on port 8080
-python -m http.server 8080
-Once the terminal activates the listener node, launch your browser and navigate to: http://localhost:8080
+2. **Serve the Application Stack:**
+   You can run and test the compiled assets via two main execution flows:
+   
+   * **Method A (Direct Local Rendering):** Navigate into the project folder root and double-click `index.html` to execute the file directly inside your default web browser engine.
+   * **Method B (Local Server Mounting - Highly Recommended):** To ensure correct session tracking, local storage routing, and asset linking compliance, boot a local server environment using Python or VS Code Live Server:
+     <pre><code># Invokes a local web server mounting instance on port 8080
+python -m http.server 8080</code></pre>
+     Once the terminal activates the listener node, launch your browser and navigate to: `http://localhost:8080`
 
 ## 🌐 8. Production & Verification Nodes
 
