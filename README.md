@@ -44,32 +44,34 @@ Instead of relying on heavy third-party UI framework overheads, the entire appli
 
 The ASCII layout below visualizes how the system's dynamic state machine initializes and shifts the theme variables across the DOM upon runtime loading:
 
+```text
 [User Initialization / Document Load]
-│
-▼
-┌───────────────────────┐
-│  Evaluate local Node  │ <─── Checks localStorage for 'portfolio-theme'
-└───────────────────────┘
-│
-┌───────┴───────┐
-▼               ▼
-[Token Exists]   [No Token Found]
-│               │
-│               ▼
-│     ┌───────────────────┐
-│     │ MatchMedia Engine │ <─── Evaluates client prefers-color-scheme
-│     └───────────────────┘
-│               │
-└───────┬───────┘
-│
-▼
-┌───────────────────────┐
-│   ApplyTheme State    │ <─── Mutates [data-theme] root DOM node
-└───────────────────────┘
-│
-▼
-┌───────────────────────┐
-│   UI Repaint Event    │ <─── Tokens adjust instantly (0.3s ease transition)
+                  │
+                  ▼
+      ┌───────────────────────┐
+      │  Evaluate local Node  │ <─── Checks localStorage for 'portfolio-theme'
+      └───────────────────────┘
+                  │
+          ┌───────┴───────┐
+          ▼               ▼
+   [Token Exists]   [No Token Found]
+          │               │
+          │               ▼
+          │     ┌───────────────────┐
+          │     │ MatchMedia Engine │ <─── Evaluates client prefers-color-scheme
+          │     └───────────────────┘
+          │               │
+          └───────┬───────┘
+                  │
+                  ▼
+      ┌───────────────────────┐
+      │   ApplyTheme State    │ <─── Mutates [data-theme] root DOM node
+      └───────────────────────┘
+                  │
+                  ▼
+      ┌───────────────────────┐
+      │   UI Repaint Event    │ <─── Tokens adjust instantly (0.3s ease transition)
+      └───────────────────────┘
 └───────────────────────┘
 
 
