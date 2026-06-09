@@ -124,7 +124,7 @@ Bash
 python -m http.server 8080
 Once the terminal activates the listener node, launch your browser and navigate to: http://localhost:8080
 
-🌐 8. Production & Verification Nodes
-Live Production URL: Launch Active Portfolio Node (Update this endpoint link with your direct live URL if needed)
+## 🌐 8. Production & Verification Nodes
 
-Featured Live Project Node (TruHotel Architecture): A production-hosted engine executing complex transactional rules, state constraint layers, and server-side CRUD processes: Launch TruHotel Engine Node ↗
+- **Live Production URL:** [Launch Active Portfolio Node](https://077348.unisza.work/truhotel/) *(Sila tukar pautan ini ke URL web portfolio kau jika ada)*
+- **Featured Live Project Node (TruHotel Architecture):** A production-hosted engine executing complex transactional rules, state constraint layers, and server-side CRUD processes: [Launch TruHotel Engine Node ↗](https://077348.unisza.work/truhotel/)
