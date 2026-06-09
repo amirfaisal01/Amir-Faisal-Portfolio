@@ -96,6 +96,14 @@ The application repository consists of four highly focused, responsive functiona
 *A detailed view showcasing academic qualification paths, chronological timelines, and structural competency boxes.*
 ![Profile Matrix Desktop Preview](images/about.png)
 
+### 3. Engineering Logs (`blog.html`)
+*A structured technical log documenting database optimizations, role-based controls, and cryptographic verification workflows.*
+![Engineering Logs Preview](images/blog.png)
+
+### 4. Transmission Portal (`contact.html`)
+*The communication panel designed with active validation, responsive input states, and data routing descriptors.*
+![Contact Form Preview](images/contact.png)
+
 ---
 
 ## 🏃 7. Local Installation & Deployment Guide
