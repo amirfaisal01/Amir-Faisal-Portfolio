@@ -44,7 +44,6 @@ Instead of relying on heavy third-party UI framework overheads, the entire appli
 
 The ASCII layout below visualizes how the system's dynamic state machine initializes and shifts the theme variables across the DOM upon runtime loading:
 
-```text
 [User Initialization / Document Load]
                   │
                   ▼
@@ -72,7 +71,6 @@ The ASCII layout below visualizes how the system's dynamic state machine initial
       ┌───────────────────────┐
       │   UI Repaint Event    │ <─── Tokens adjust instantly (0.3s ease transition)
       └───────────────────────┘
-└───────────────────────┘
 
 
 ---
