@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Amir Faisal — Engineering Logs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Premium Custom Overrides for Blog Page Only */
+        .section-header-inline {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header-inline::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent-primary);
+            border-radius: 2px;
+        }
+
+        .premium-blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .premium-blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--border-color); /* Neutral default */
+            padding: 2.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .premium-blog-card:hover {
+            transform: translateY(-4px);
+            border-top-color: var(--accent-primary);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .premium-blog-meta {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--accent-primary);
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+        }
+
+        .premium-blog-card h3 {
+            font-size: 1.35rem;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            line-height: 1.35;
+        }
+
+        .premium-blog-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 0; /* Dinormalkan semula kerana tiada border bawah */
+            flex-grow: 1;
+        }
+
+        @media (max-width: 768px) {
+            .premium-blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AmirFaisal</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-header-inline">Engineering Blog</h2>
+        <p class="section-desc">Technical documentation detailing the algorithmic structures, design patterns, and architectural decisions implemented across my projects.</p>
+        
+        <div class="premium-blog-grid">
+            
+            <article class="premium-blog-card">
+                <div>
+                    <div class="premium-blog-meta">June 8, 2026 | System Architecture</div>
+                    <h3>Enforcing State Separation in Multi-Role Access Control</h3>
+                    <p>Analysis of state isolation principles within web dashboards. Explores the encapsulation techniques used to separate execution scopes between Vehicle Owners, Technicians, and Super Administrators using strict session handling.</p>
+                </div>
+            </article>
+
+            <article class="premium-blog-card">
+                <div>
+                    <div class="premium-blog-meta">June 1, 2026 | Cryptography & Data Integrity</div>
+                    <h3>Mitigating Data Tampering via Cryptographic Validation Pipelines</h3>
+                    <p>An implementation review of client-side and server-side SHA-256 data hashing to process runtime service arrays (mileage metrics, timelines, transactional costs) into unalterable operational logs.</p>
+                </div>
+            </article>
+
+            <article class="premium-blog-card">
+                <div>
+                    <div class="premium-blog-meta">May 20, 2026 | Database Relational Structures</div>
+                    <h3>Optimizing Transactional Integrity in Hotel Reservation Systems</h3>
+                    <p>An architectural deep-dive into the TruHotel platform. Examines relational database optimization rules (MySQL), state constraints for room availability parameters, and the prevention of race conditions during simultaneous user bookings.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amir Faisal</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

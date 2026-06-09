@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Amir Faisal — Engineering Inquiries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Premium Custom Overrides for Contact Page Only */
+        .section-header-inline {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header-inline::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent-primary);
+            border-radius: 2px;
+        }
+
+        .premium-contact-wrapper {
+            max-width: 1000px;
+            margin: 2rem auto 5rem auto;
+        }
+
+        .contact-layout-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 3rem;
+            margin-top: 2.5rem;
+            align-items: start;
+        }
+
+        .direct-channels-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .channel-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .channel-card:hover {
+            border-left-color: var(--accent-primary);
+            transform: translateX(4px);
+        }
+
+        .channel-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .channel-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            word-break: break-all;
+        }
+
+        .channel-action-link {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.15s ease;
+        }
+
+        .channel-card:hover .channel-action-link {
+            color: var(--accent-primary);
+            text-decoration: underline;
+        }
+
+        .premium-contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--accent-primary);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        .premium-form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        .premium-form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .premium-input, .premium-textarea {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .premium-input:focus, .premium-textarea:focus {
+            border-color: var(--accent-primary);
+            background-color: var(--bg-card);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .premium-submit-btn {
+            width: 100%;
+            justify-content: center;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .premium-contact-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AmirFaisal</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+
+    <main class="container">
+        <div class="premium-contact-wrapper">
+            <h2 class="section-header-inline">Technical Collaboration</h2>
+            <p class="section-desc">For code reviews, research inquiries, or systems engineering opportunities, submit your requirements through the communication portal below.</p>
+            
+            <div class="contact-layout-grid">
+                
+                <div class="direct-channels-stack">
+                    <div class="channel-card">
+                        <div class="channel-title">Open Source Repositories</div>
+                        <div class="channel-value">github.com/amirfaisal01</div>
+                        <a href="https://github.com/amirfaisal01" target="_blank" rel="noopener noreferrer" class="channel-action-link">View My GitHub Profile &rarr;</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-title">Communication Routing</div>
+                        <div class="channel-value">amirfaisal480@gmail.com</div>
+                        <a href="mailto:amirfaisal480@gmail.com" class="channel-action-link">Open Mail Client &rarr;</a>
+                    </div>
+                    
+                    <div class="channel-card">
+                        <div class="channel-title">Direct Secure Hotline</div>
+                        <div class="channel-value">+60 11-3370 7566</div>
+                        <a href="tel:+601133707566" class="channel-action-link">Initiate Direct Call &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="premium-contact-card">
+                    <form onsubmit="event.preventDefault(); alert('Transmission verified successfully.');">
+                        <div class="premium-form-group">
+                            <label for="name">Identification / Full Name</label>
+                            <input type="text" id="name" class="premium-input" autocomplete="name" placeholder="e.g. Dr. Alex / Tech Lead" required>
+                        </div>
+                        
+                        <div class="premium-form-group">
+                            <label for="email">Communication Routing (Email Address)</label>
+                            <input type="email" id="email" class="premium-input" autocomplete="email" placeholder="name@organization.com" required>
+                        </div>
+                        
+                        <div class="premium-form-group">
+                            <label for="message">Scope of Work / Message Description</label>
+                            <textarea id="message" class="premium-textarea" rows="6" placeholder="Provide details regarding systemic requirements, architecture stack, or timeline milestones..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary premium-submit-btn">Dispatch Transmission</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+<footer>
+        <p>&copy; 2026 Amir Faisal</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

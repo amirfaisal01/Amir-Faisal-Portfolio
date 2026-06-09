@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Amir Faisal — Computer Science Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Premium Custom Overrides for Home Page Only */
+        .section-header-inline {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header-inline::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent-primary);
+            border-radius: 2px;
+        }
+
+        .premium-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .premium-project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .premium-project-card:hover {
+            transform: translateY(-4px);
+            border-top-color: var(--accent-primary);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .tech-pill {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--bg-primary);
+            color: var(--text-muted);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .premium-project-card h3 {
+            font-size: 1.4rem;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .premium-project-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            flex-grow: 1;
+        }
+
+        .action-link-wrapper {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--bg-primary);
+        }
+
+        .premium-project-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent-primary);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.15s ease;
+        }
+
+        .premium-project-link:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .premium-projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AmirFaisal</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge-container">
+                <span class="project-pulse"></span>
+                <span class="project-badge">Active Repository</span>
+                <span class="project-title-tag">System Engineering Showcase</span>
+            </div>
+            
+            <h1>Amir Faisal</h1>
+            <p>I am a Computer Science student currently developing secure full-stack solutions. I use this space to document my software engineering projects, architectural layouts, and code implementations—focusing on cryptographic data integrity mechanisms and role-based access controls.</p>
+            
+            <div class="hero-buttons">
+                <a href="about.html" class="btn btn-secondary">Technical Specifications</a>
+                <a href="blog.html" class="btn btn-secondary">Development Logs</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 0; margin-bottom: 5rem;">
+        <section class="projects-section">
+            <h2 class="section-header-inline">Featured Engineering Projects</h2>
+            
+            <div class="premium-projects-grid">
+                
+                <div class="premium-project-card">
+                    <div>
+                        <h3>Car Maintenance Record System</h3>
+                        <p>A high-integrity web platform featuring secure role-isolated access control matrices (Owner, Workshop, Admin). Programmatically engineered to mitigate downstream data tampering by integrating client-side SHA-256 cryptographic verification pipelines for all operational records.</p>
+                        
+                        <div class="project-tech-tags">
+                            <span class="tech-pill">PHP Core</span>
+                            <span class="tech-pill">CodeIgniter</span>
+                            <span class="tech-pill">SHA-256</span>
+                            <span class="tech-pill">RBAC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-link-wrapper">
+                        <a href="https://077348.unisza.work/CarMaintenanceRecord/" target="_blank" rel="noopener noreferrer" class="premium-project-link">Launch Live App ↗</a>
+                    </div>
+                </div>
+
+                <div class="premium-project-card">
+                    <div>
+                        <h3>TruHotel Booking Platform</h3>
+                        <p>An optimized full-stack hotel reservation architecture engineered for consistent transaction handling. Implemented deep relational schemas (MySQL), secure session validation algorithms, dynamic resource cost computation, and clean server-side CRUD manipulation routines.</p>
+                        
+                        <div class="project-tech-tags">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">CRUD Layout</span>
+                            <span class="tech-pill">Session Security</span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-link-wrapper">
+                        <a href="https://077348.unisza.work/truhotel/" target="_blank" rel="noopener noreferrer" class="premium-project-link">Launch Live App ↗</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amir Faisal</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
